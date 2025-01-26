@@ -50,3 +50,5 @@ class ApiConfig {
     return '$url${url.contains('?') ? '&' : '?'}apiKey=$apiKey';
   }
 }
+
+
