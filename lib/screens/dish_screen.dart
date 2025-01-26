@@ -2,7 +2,7 @@ import 'package:daily_dish/services/api_services.dart';
 import 'package:flutter/material.dart';
 
 class DishScreen extends StatefulWidget {
-  const DishScreen({Key? key}) : super(key: key);
+  const DishScreen({super.key});
 
   @override
   State<DishScreen> createState() => _DishScreenState();

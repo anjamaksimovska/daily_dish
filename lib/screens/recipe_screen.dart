@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class RecipeScreen extends StatelessWidget {
   final Map<String, dynamic>? recipe;
 
-  RecipeScreen({this.recipe});
+  const RecipeScreen({super.key, this.recipe});
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +29,9 @@ class RecipeScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return ListTile(
                     leading: CircleAvatar(
-                      child: Text('${index + 1}'),
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
+                      child: Text('${index + 1}'),
                     ),
                     title: Text(
                       steps[index].trim(),

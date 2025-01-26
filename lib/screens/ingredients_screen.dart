@@ -4,7 +4,7 @@ import 'recipe_screen.dart';
 class IngredientsScreen extends StatelessWidget {
   final Map<String, dynamic>? recipe;
 
-  IngredientsScreen({this.recipe});
+  const IngredientsScreen({super.key, this.recipe});
 
   @override
   Widget build(BuildContext context) {

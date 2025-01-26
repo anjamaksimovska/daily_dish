@@ -5,7 +5,7 @@ class RecipeCard extends StatelessWidget {
   final String imageUrl;
   final VoidCallback onTap;
 
-  RecipeCard({required this.title, required this.imageUrl, required this.onTap});
+  const RecipeCard({super.key, required this.title, required this.imageUrl, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
